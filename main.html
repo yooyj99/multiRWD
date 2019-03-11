@@ -9,9 +9,24 @@
 </head>
 <body>
   <div class="container">
-    <header class="header">헤더</header>
+    <header class="header">
+      <h1 class="logo"><a href="#"><img src="images/rwd-logo.png" alt="web cafe"></a></h1>
+      <ul class="member">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">커뮤니티</a></li>
+      </ul>
+      <form action="https://formspree.io/yooyj99@naver.com" method="POST" class="search">
+        <fieldset>
+          <legend>검색 폼</legend>
+          <label for="search" class="readable-hidden">검색어</label>
+          <input type="search" id="search">
+          <button type="submit" class="btn-search">검색</button>
+        </fieldset>
+      </form>
+    </header>
     <nav class="navigation">내비게이션</nav>
-    <main class="main">콘텐츠
+    <main class="main">
       <section class="book">추천서적</section>
       <section class="news">새소식</section>
       <section class="board">게시판</section>
