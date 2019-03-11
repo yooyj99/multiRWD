@@ -7,6 +7,16 @@
 *, *::before, *::after{
   box-sizing: border-box;
 }
+/* 숨김 콘텐츠 */
+legend, .readable-hidden{
+  background: yellowgreen;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  margin: -1px;
+}
 /* 콘텐츠 영역별 배경색 */
 .header{
   background: yellow;
@@ -59,7 +69,26 @@ body{
   }
   /* 모바일 헤더 */
   .header{
-    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .logo,.member,.search{
+    width: 100%;
+  }
+  /* 모바일 로고 */
+  .logo{
+    background: gray;
+  }
+  /* 모바일 멤버 링크 */
+  .member{
+    background: tomato;
+    order:-1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  /* 모바일 검색 폼 */
+  .search{
+    background: purple;
   }
   /* 모바일 내비게이션 */
   .navigation{
@@ -92,15 +121,14 @@ body{
     /* justify-content: stretch; */
   }
   .header,.main,.slogan{
-    max-width:1200px;
-    width: 80%;
+    width: 1000px;
   }
   .navigation,.footer{
     width: 100%;
   }
   /* 데스크탑 헤더 */
   .header{
-    height: 15vh;
+
   }
   /* 데스크탑 내비게이션 */
   .navigation{
@@ -118,12 +146,13 @@ body{
   .book{
     /* width: 320px; */
     width: 32%;
-    /* width: calc((4*65px) + (3*20px)); */
+    /* width: calc((5 * 65 + 4 * 20) / 1000 * 100%); */
   }
   /* 데스크탑 새소식 */
   .news{
     /* width: 660px; */
     width: 66%;
+    /* width: calc((7 * 65 + 6 * 20) / 1000 * 100%); */
   }
   /* 데스크탑 게시판 */
   .board{
