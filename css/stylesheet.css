@@ -1,1 +1,152 @@
 @charset "utf-8";
+@import url("fonts.css");
+@import url("normalize.css");
+@import url("reset.css");
+
+/* 모든 디바이스에 적용 */
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+/* 콘텐츠 영역별 배경색 */
+.header{
+  background: yellow;
+}
+.navigation{
+  background: lime;
+}
+.main{
+  background: blue;
+}
+.book{
+  background: orange;
+}
+.news{
+  background: pink;
+}
+.board{
+  background: brown;
+}
+.favorite{
+  background: hotpink;
+}
+.twitter{
+  background: teal;
+}
+.slogan{
+  background: skyblue;
+}
+.footer{
+  background: yellow;
+}
+/* 기본 스타일 */
+body{
+  color:#181818;
+  background: #fff;
+  font-size: 1.4rem;
+  font-family: "Noto Sans Regular";
+  line-height: 1.5;
+}
+
+/* 모바일 스타일 */
+@media screen and (max-width: 999px){
+  html{
+    font-size:10px;
+  }
+  /* 모바일 레이아웃 */
+  .header, .main, .slogan, .footer{
+    width: 100%;
+    padding: 0 20px;
+  }
+  /* 모바일 헤더 */
+  .header{
+    height: 10vh;
+  }
+  /* 모바일 내비게이션 */
+  .navigation{
+    height: 10vh;
+  }
+  /* 모바일 메인콘텐츠 */
+  .main{
+    height: 60vh;
+  }
+  /* 모바일 슬로건 */
+  .slogan{
+    height: 10vh;
+  }
+  /* 모바일 푸터 */
+  .footer{
+    height: 10vh;
+  }
+}/* end  */
+
+ /* 데스크탑 스타일 */
+@media screen and (min-width: 1000px){
+  html{
+    font-size: 12px;
+  }
+  /* 데스크탑 레이아웃 */
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: stretch; */
+  }
+  .header,.main,.slogan{
+    max-width:1200px;
+    width: 80%;
+  }
+  .navigation,.footer{
+    width: 100%;
+  }
+  /* 데스크탑 헤더 */
+  .header{
+    height: 15vh;
+  }
+  /* 데스크탑 내비게이션 */
+  .navigation{
+    height: 15vh;
+  }
+  /* 데스크탑 메인 콘텐츠 */
+  .main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 40vh;
+  }
+  /* 데스크탑 추천서적 */
+  .book{
+    /* width: 320px; */
+    width: 32%;
+    /* width: calc((4*65px) + (3*20px)); */
+  }
+  /* 데스크탑 새소식 */
+  .news{
+    /* width: 660px; */
+    width: 66%;
+  }
+  /* 데스크탑 게시판 */
+  .board{
+    /* width: 320px; */
+    width: 32%;
+  }
+  /* 데스크탑 인기사이트 */
+  .favorite{
+    /* width: 405px; */
+    width: 40.5%;
+  }
+  /* 데스크탑 트위터 */
+  .twitter{
+    /* width: 235px; */
+    width: 23.5%;
+  }
+  /* 데스크탑 슬로건 */
+  .slogan{
+    height: 15vh;
+  }
+  /* 데스크탑 푸터 */
+  .footer{
+    height: 15vh;
+  }
+  
+}/* end  */
