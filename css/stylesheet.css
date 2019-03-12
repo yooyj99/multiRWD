@@ -136,7 +136,48 @@ body{
   }
   /* 모바일 내비게이션 */
   .navigation{
-    height: 10vh;
+
+  }
+  /* 모바일 메인메뉴 제어 버튼 */
+  .btn-menubar{
+    background: blue;
+    position: absolute;
+    top: 5em;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .menubar{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: #fff;
+  }
+  .menubar-top{
+    top:0;
+  }
+  .menu-act .menubar-top{
+    top:50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+  .menubar-middle{
+    top:50%;
+    transform: translateY(-50%);
+  }
+  .menu-act .menubar-middle{
+    transform: translate(-100%, -50%);
+  }
+  .menubar-bottom{
+    top:100%;
+    transform: translateY(-100%);
+  }
+  .menu-act .menubar-bottom{
+    top:50%;
+    transform: translateY(-50%) rotate(-45deg);
   }
   /* 모바일 메인콘텐츠 */
   .main{
