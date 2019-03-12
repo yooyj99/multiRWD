@@ -63,7 +63,44 @@ body{
   font-family: "Noto Sans Regular";
   line-height: 1.5;
 }
-
+/* 메인 콘텐츠 섹션 제목 공통 */
+.main-heading{
+  font-family: "Noto Sans Bold";
+  font-size: 1.6rem;
+  height: 60px;
+  background: url(images/sprite_main.png)no-repeat;
+  padding-left: 65px;
+}
+.news-heading{
+  background-position: 0 -230px;
+}
+.board-heading{
+  background-position: 0 -115px;
+}
+.favorite-heading{
+  background-position: 0 -345px;
+}
+.twitter-heading{
+  background-position: 0 -460px;
+}
+.en-heading{
+  display: block;
+}
+.book-heading .en-heading{
+  color: #abd375;
+}
+.news-heading .en-heading{
+  color: #e8ca58;
+}
+.board-heading .en-heading{
+  color: #c7b39a;
+}
+.favorite-heading .en-heading{
+  color: #eea60a;
+}
+.twitter-heading .en-heading{
+  color: #6aaee6;
+}
 /* 모바일 스타일 */
 @media screen and (max-width: 999px){
   html{
@@ -206,8 +243,16 @@ body{
   }
   /* 모바일 메인콘텐츠 */
   .main{
-    height: 60vh;
   }
+  .book, .news, .board, .favorite, .twitter{
+    margin: 1em 0;
+  }
+  /* 모바일 메인 콘텐츠 섹션 제목 */
+  /* .main-heading{
+    height: 3em;
+    background-color: blue;
+    background-size: 3em 3em;
+  } */
   /* 모바일 슬로건 */
   .slogan{
     height: 10vh;
@@ -337,6 +382,9 @@ body{
     flex-wrap: wrap;
     justify-content: space-between;
     height: 40vh;
+  }
+  .book, .news, .board, .favorite, .twitter{
+    margin-top: 20px;
   }
   /* 데스크탑 추천서적 */
   .book{
