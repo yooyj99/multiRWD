@@ -1,3 +1,7 @@
+$(window).resize(function (){
+  location.reload();
+});//리사이징
+
 var viewport = matchMedia('(max-width:999px)'); 
 
 if(viewport.matches){
