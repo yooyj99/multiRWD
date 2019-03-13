@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>picture 요소</title>
+  <style>
+    .img-container{
+      width: 50%;
+      border:10px solid #000;
+    }
+    .rwd{
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>picture 요소 삽입하기</h1>
+  <div class="img-container">
+    <picture>
+      <source media="(min-width: 1025px)" srcset="images/large.jpg">
+      <source media="(min-width: 768px) and (max-width: 1024px)" srcset="images/medium.jpg">
+      <source media="(max-width: 767px)" srcset="images/small.jpg">
+      <img src="images/normal.jpg" alt="" class="rwd">
+    </picture>
+  </div>
+</body>
+</html>
