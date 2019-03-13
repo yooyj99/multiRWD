@@ -23,27 +23,6 @@ a{
   color: inherit;
 }
 /* 콘텐츠 영역별 배경색 */
-.navigation{
-  background: lime;
-}
-.main{
-  background: blue;
-}
-.book{
-  background: orange;
-}
-.news{
-  background: pink;
-}
-.board{
-  background: brown;
-}
-.favorite{
-  background: hotpink;
-}
-.twitter{
-  background: teal;
-}
 .slogan{
   background: skyblue;
 }
@@ -61,7 +40,7 @@ body{
   background: #fff;
   font-size: 1.4rem;
   font-family: "Noto Sans Regular";
-  line-height: 1.5;
+  line-height: 1.15;
 }
 /* 메인 콘텐츠 섹션 제목 공통 */
 .main-heading{
@@ -101,6 +80,44 @@ body{
 .twitter-heading .en-heading{
   color: #6aaee6;
 }
+/* 메인 콘텐츠 단락 공통 */
+[class$="-summary"]{
+  line-height: 1.5;
+}
+/* 추천 서적 공통 */
+.book-cover{
+  width:70%;
+  margin: 15px auto;
+  text-align: center;
+}
+.book-detail{
+  text-align: center;
+  margin: 15px 0; 
+}
+.book-author, .book-author-name{
+  display: inline-block;
+}
+.book-grade{
+  font-size: 2rem;
+  color: #abd375;
+}
+/* 새소식 공통 */
+.video-container{
+  margin:  15px auto;
+}
+.video-date{
+  display: block;
+  text-align: right;
+  margin-top: 15px;
+}
+/* 게시판 공통 */
+
+/* 인기사이트 공통 */
+
+/* 트위터 공통 */
+
+
+
 /* 모바일 스타일 */
 @media screen and (max-width: 999px){
   html{
@@ -381,7 +398,6 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    height: 40vh;
   }
   .book, .news, .board, .favorite, .twitter{
     margin-top: 20px;
