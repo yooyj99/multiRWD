@@ -22,13 +22,6 @@ a{
   text-decoration: none;
   color: inherit;
 }
-/* 콘텐츠 영역별 배경색 */
-.slogan{
-  background: skyblue;
-}
-.footer{
-  background: yellow;
-}
 /* 반응형 콘텐츠 */
 .rwd{
   max-width: 100%; 
@@ -163,7 +156,6 @@ body{
 .twitter-author{
   position: relative;
   margin-top: 15px;
-  
 }
 .twitter-author-heading,.twitter-summary{
   padding-right: 25%;
@@ -186,7 +178,15 @@ body{
 .twitter-summary{
   margin-top: 15px;
 }
-
+/* 푸터 공통 */
+.footer{
+  background: #988574;
+  color:#fff;
+}
+.copyright{
+  display: block;
+  margin-top: 15px;
+}
 
 /* 모바일 스타일 */
 @media screen and (max-width: 999px){
@@ -342,11 +342,14 @@ body{
   } */
   /* 모바일 슬로건 */
   .slogan{
-    height: 10vh;
+    display:none;
   }
   /* 모바일 푸터 */
   .footer{
-    height: 10vh;
+    padding: 20px;
+  }
+  .address span{
+    display: block;
   }
 }/* end  */
 
@@ -502,11 +505,16 @@ body{
   }
   /* 데스크탑 슬로건 */
   .slogan{
-    height: 15vh;
+    padding:50px 120px 15px; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  .slogan q::after{
+    content: "";
   }
   /* 데스크탑 푸터 */
   .footer{
-    height: 15vh;
+    padding: 20px 0;
+    text-align: center;
   }
   
 }/* end  */
