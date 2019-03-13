@@ -27,7 +27,7 @@
         </fieldset>
       </form>
     </header>
-    <nav class="navigation menu-act">
+    <nav class="navigation">
       <h2 class="readable-hidden">메인 메뉴</h2>
       <button class="btn-menubar" type="button" aria-label="메인 메뉴 열기">
         <span class="menubar menubar-top"></span>
@@ -117,22 +117,64 @@
         <time class="video-date icon-calendar" datetime="2019-03-13T10:23:35">2019.03.13</time>
       </section>
       <section class="board">
-        <h2 class="main-heading board-heading">
+        <h2 class="main-heading board-heading" id="board-heading">
           게시판
           <span class="en-heading">WebCafe Board</span>
         </h2>
+        <ul class="board-list">
+          <li class="icon-star">
+            <a href="">HTML의 모든 것을 알려주마! 샘플 활용법!</a>
+            <time datetime="2019-03-13T11:06:09">2019-03-13</time>
+          </li>
+          <li class="icon-star">
+            <a href="">W3C 사이트 리뉴얼 및 공지사항</a>
+            <time datetime="2019-03-13T11:06:09">2019-03-13</time>
+          </li>
+          <li class="icon-star">
+            <a href="">KWCAG 2.1 소식</a>
+            <time datetime="2019-03-13T11:06:09">2019-03-13</time>
+          </li>
+          <li class="icon-star">
+            <a href="">서버 점검으로 인한 사이트 이용 안내입니다.</a>
+            <time datetime="2019-03-13T11:06:09">2019-03-13</time>
+          </li>
+          <li class="icon-star">
+            <a href="">여러분들이 생각하는 웹접근성에 대해 이야기를 나누어 봅시다.</a>
+            <time datetime="2019-03-13T11:06:09">2019-03-13</time>
+          </li>
+        </ul>
+        <a href="#" class="more icon-plus" aria-describedby="board-heading">더보기</a>
       </section>
       <section class="favorite">
         <h2 class="main-heading favorite-heading">
           인기 사이트
           <span class="en-heading">Favorite Site</span>
         </h2>
+        <ol class="favorite-list">
+          <li><a href="http://ko.learnlayout.com/">Learn CSS Layout</a></li>
+          <li><a href="https://flexboxfroggy.com/#ko">Flexbox Froggy</a></li>
+          <li><a href="http://cssgridgarden.com/#ko">CSS Grid Garden</a></li>
+          <li><a href="https://developer.mozilla.org/ko/">MDN Web Docs</a></li>
+        </ol>
       </section>
       <section class="twitter">
         <h2 class="main-heading twitter-heading">
           트위터
           <span class="en-heading">WebCafe Twitter</span>
         </h2>
+        <article class="twitter-author">
+          <h3 class="twitter-author-heading">
+            <span class="twitter-author-name">김데레사</span>
+            <a href="#" class="twitter-author-id">@seulbinim</a>
+          </h3>
+          <div class="image-container">
+            <img src="images/seulbinim.jpg" alt="" class="rwd twitter-profile">
+          </div>
+          <p class="twitter-summary">
+              웹표준 핵심 가이드북 개정판 출시 기념으로 세미나를 준비했습니다. 참석을 원하시는 분들은 트위터로 문의하시기 바랍니다.
+          </p>
+          <time class="twitter-date icon-calendar" datetime="2019-03-13T11:52:21">2019.03.13</time>
+        </article>
       </section>
     </main>
     <article class="slogan">슬로건</article>
